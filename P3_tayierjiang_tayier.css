@@ -1,6 +1,24 @@
+@font-face {
+    font-family: Shrikhand, Roboto, sans-serif;
+    src: url(/Users/tayier/Library/Fonts/Shrikhand-Regular.otf);
+    src: url(/Users/tayier/Downloads/Roboto/Roboto-Medium.ttf);
+}
+
 body {
     height: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Roboto, shrikhand, sans-serif;
+    image-rendering: pixelated;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
