@@ -1,0 +1,19 @@
+{
+    "name": "p3_tayierjiang_tayier",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/developeur-ta/Tayierjiang_3_050122021.git"
+    },
+    "author": "ta",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/developeur-ta/Tayierjiang_3_050122021/issues"
+    },
+    "homepage": "https://github.com/developeur-ta/Tayierjiang_3_050122021#readme"
+}
