@@ -4,7 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+
+        "sass": "node_modules/.bin/node-sass --watch ./P3_tayierjiang_tayier.scss ./P3_tayierjiang_tayier.css --style compressed"
     },
     "repository": {
         "type": "git",
@@ -15,5 +16,8 @@
     "bugs": {
         "url": "https://github.com/developeur-ta/Tayierjiang_3_050122021/issues"
     },
-    "homepage": "https://github.com/developeur-ta/Tayierjiang_3_050122021#readme"
+    "homepage": "https://github.com/developeur-ta/Tayierjiang_3_050122021#readme",
+    "dependencies": {
+        "node-sass": "^6.0.0"
+    }
 }
