@@ -4,6 +4,8 @@ $color-secondaire:#FF79DA;
 $color-tertiaire:#99E2D0;
 $background-color-Primaire:rgb(245, 245, 245);
 $background-color-footer:black;
+$color-text_button:white;
+$box-shadow-base: (0 0 20px 0.2px lightgrey);
 // Identité graphique Polices ----------------
 $Logo-et-titres:Shrikhand;
 $Texte:Roboto;
@@ -41,7 +43,7 @@ $Texte:Roboto;
     padding-block-start: 17px;
 }
 
-@mixin link-retour_accueil {
+@mixin flash-retour_accueil {
     font-size: x-large;
     justify-self: center;
     font-family: Roboto, sans-serif;
@@ -57,16 +59,23 @@ $Texte:Roboto;
     justify-content: center;
 }
 
-
-}
 @mixin positon-imge {
     justify-self: center;
 }
-@mixin name {}
-@mixin name {}
-font-size: x-large;
-text-align: center;
-justify-self: center;
+
+@mixin flex-main {
+    background-color: $background-color-Primaire;
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    padding: 10px 5px;
+}
+
+@mixin style-box {
+    box-shadow: nth($box-shadow-base);
+    border-radius: 18px;
+}
+
 //  -----------􏰀 Effets graphiques et animations------------------------
 // /Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser les animations ou transitions CSS,
 // pas de JavaScript ni de librairie. 5 Boutons ● Au survol,
