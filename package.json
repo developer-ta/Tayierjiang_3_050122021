@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
 
-        "sass": "node_modules/.bin/node-sass --watch ./P3_tayierjiang_tayier.scss ./P3_tayierjiang_tayier.css --style compressed"
+        "sass": "node_modules/.bin/node-sass --watch ./P3_tayierjiang_tayier.scss ./P3_tayierjiang_tayier.css --style expanded"
 
     },
     "repository": {

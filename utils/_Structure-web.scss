@@ -18,19 +18,56 @@ $Texte:Roboto;
 }
 
 @mixin box-shadow-menu-button {
-    element.style {
-        box-shadow: 0 0 20px 0.2px lightgrey;
-        border-radius: 18px;
-        height: 60px;
-        width: 330px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px 10px;
-    }
+    box-shadow: 0 0 20px 0.2px lightgrey;
+    border-radius: 18px;
+    height: 60px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
 }
 
-// -----------􏰀 Effets graphiques et animations------------------------
+@mixin style-logo_box {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    overflow: hidden;
+    height: 10%;
+    /* position: fixed; */
+    padding-block-start: 17px;
+}
+
+@mixin link-retour_accueil {
+    font-size: x-large;
+    justify-self: center;
+    font-family: Roboto, sans-serif;
+}
+
+@mixin style-body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, shrikhand, sans-serif;
+    image-rendering: pixelated;
+    justify-content: center;
+}
+
+
+}
+@mixin positon-imge {
+    justify-self: center;
+}
+@mixin name {}
+@mixin name {}
+font-size: x-large;
+text-align: center;
+justify-self: center;
+//  -----------􏰀 Effets graphiques et animations------------------------
 // /Les effets accessibles au clic ou au survol sont visibles sur la maquette. Ils devront utiliser les animations ou transitions CSS,
 // pas de JavaScript ni de librairie. 5 Boutons ● Au survol,
 // la couleur de fond des boutons principaux devra légèrement s’éclaircir. L’ombre portée devra également être plus visible. ● À terme,
