@@ -19,7 +19,7 @@ $Texte:Roboto;
     margin-block-end: 5px;
 }
 
-@mixin box-shadow-menu-button {
+@mixin box-shadow_menu_button {
     box-shadow: 0 0 20px 0.2px lightgrey;
     border-radius: 18px;
     height: 60px;
@@ -72,8 +72,10 @@ $Texte:Roboto;
 }
 
 @mixin style-box {
-    box-shadow: nth($box-shadow-base);
+    box-shadow: 0 0 20px 0.2px lightgrey;
+    overflow: hidden;
     border-radius: 18px;
+    margin: 10px 0px;
 }
 
 //  -----------􏰀 Effets graphiques et animations------------------------
