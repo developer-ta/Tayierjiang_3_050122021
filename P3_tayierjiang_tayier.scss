@@ -9,21 +9,64 @@ body {
     @include style-body
 }
 
+.box-flex-row {
+    @include flex-align-center-row;
+}
+
+.logo_accueil {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 7%;
+    padding-block-start: 17px;
+}
+
+.logo {
+    @include style-logo_box;
+}
+
 .container {
-    display: flex;
-    flex: 100%;
-    flex-direction: column;
+    @include flex-center-column;
     height: 100%;
-    justify-content: center;
-    align-content: center;
+}
+
+.localisation {
+    @include flex-center-column;
+    margin-block-start: 62px;
+    background-color: $background-color-Primaire;
+    align-items: center;
+    &_paris {
+        background-color: #e7e7e7;
+        width: 100%;
+        .fa-map-marker-alt {
+            padding-right: 10px;
+        }
+    }
+    .info_Restaurant {
+        text-align: center
+    }
+    .btn-Violet {
+        @include btn-Violet;
+    }
 }
 
 .menu_btn {
     @include box-shadow-menu-button;
 }
 
-.main {
-    @include flex-main;
+.main_fonctionnement {
+    .main_fonctionnement_elemant-flex {
+        .fa-stack {}
+        .fa-mobile-alt {}
+        .fa-list-ul {}
+        .fa-store {}
+    }
+}
+
+.restaurant {
+    @include flex-main-box;
     .restaurant_menu {
         @include style-box;
         &_image {

@@ -2,8 +2,8 @@
 @font-face {
   font-family: Shrikhand, Roboto, sans-serif;
   src: url(/Users/tayier/Library/Fonts/Shrikhand-Regular.otf);
-  src: url(/Users/tayier/Downloads/Roboto/Roboto-Medium.ttf); }
-
+  src: url(/Users/tayier/Downloads/Roboto/Roboto-Medium.ttf);
+}
 body {
   height: 100%;
   box-sizing: border-box;
@@ -11,15 +11,76 @@ body {
   padding: 0;
   font-family: Roboto, shrikhand, sans-serif;
   image-rendering: pixelated;
-  justify-content: center; }
+  justify-content: center;
+}
+
+.box-flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_accueil {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 7%;
+  padding-block-start: 17px;
+}
+
+.logo {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  overflow: hidden;
+  height: 8%;
+  /* position: fixed; */
+  padding-block-start: 17px;
+}
 
 .container {
   display: flex;
   flex: 100%;
   flex-direction: column;
-  height: 100%;
   justify-content: center;
-  align-content: center; }
+  height: 100%;
+}
+
+.localisation {
+  display: flex;
+  flex: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin-block-start: 62px;
+  background-color: whitesmoke;
+  align-items: center;
+}
+.localisation_paris {
+  background-color: #e7e7e7;
+  width: 100%;
+}
+.localisation_paris .fa-map-marker-alt {
+  padding-right: 10px;
+}
+.localisation .info_Restaurant {
+  text-align: center;
+}
+.localisation .btn-Violet {
+  box-shadow: 0 0 20px 0.2px #9356DC;
+  overflow: hidden;
+  border-radius: 27px;
+  margin: 10px 0px;
+  background-color: #FF79DA;
+  text-align: center;
+  width: 220px;
+  color: #fff;
+}
 
 .menu_btn {
   box-shadow: 0 0 20px 0.2px lightgrey;
@@ -29,32 +90,39 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 10px; }
+  padding: 5px 10px;
+}
 
-.main {
+.restaurant {
   background-color: whitesmoke;
   display: flex;
   flex: 100%;
   flex-direction: column;
-  padding: 10px 5px; }
-  .main .restaurant_menu {
-    box-shadow: 0 0 20px 0.2px lightgrey;
-    overflow: hidden;
-    border-radius: 18px;
-    margin: 10px 0px; }
-    .main .restaurant_menu_image {
-      height: 175px;
-      width: 100%; }
-    .main .restaurant_menu .présentation_menu {
-      display: flex;
-      justify-content: space-around;
-      align-items: center; }
-      .main .restaurant_menu .présentation_menu .fa-heart {
-        font-size: large; }
-    .main .restaurant_menu .nouveau_menu {
-      position: relative;
-      bottom: 12em;
-      left: 83px;
-      background-color: #99E2D0;
-      border-radius: 3px;
-      padding: 5px; }
+  padding: 10px 5px;
+}
+.restaurant .restaurant_menu {
+  box-shadow: 0 0 20px 0.2px lightgrey;
+  overflow: hidden;
+  border-radius: 18px;
+  margin: 10px 0px;
+}
+.restaurant .restaurant_menu_image {
+  height: 175px;
+  width: 100%;
+}
+.restaurant .restaurant_menu .présentation_menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.restaurant .restaurant_menu .présentation_menu .fa-heart {
+  font-size: large;
+}
+.restaurant .restaurant_menu .nouveau_menu {
+  position: relative;
+  bottom: 12em;
+  left: 83px;
+  background-color: #99E2D0;
+  border-radius: 3px;
+  padding: 5px;
+}

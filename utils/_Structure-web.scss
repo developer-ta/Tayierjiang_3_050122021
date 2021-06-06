@@ -9,6 +9,17 @@ $box-shadow-base: (0 0 20px 0.2px lightgrey);
 // Identité graphique Polices ----------------
 $Logo-et-titres:Shrikhand;
 $Texte:Roboto;
+@mixin btn-Violet {
+    box-shadow: 0 0 20px 0.2px $color-primaires;
+    overflow: hidden;
+    border-radius: 27px;
+    margin: 10px 0px;
+    background-color: $color-secondaire;
+    text-align: center;
+    width: 220px;
+    color: #fff;
+}
+
 @mixin font-logo_titres() {
     font-family: shrikhand, sans-serif;
 }
@@ -38,7 +49,7 @@ $Texte:Roboto;
     background-color: white;
     top: 0;
     overflow: hidden;
-    height: 10%;
+    height: 8%;
     /* position: fixed; */
     padding-block-start: 17px;
 }
@@ -63,12 +74,32 @@ $Texte:Roboto;
     justify-self: center;
 }
 
-@mixin flex-main {
+@mixin flex-main-box {
     background-color: $background-color-Primaire;
     display: flex;
     flex: 100%;
     flex-direction: column;
     padding: 10px 5px;
+}
+
+@mixin flex-center-column {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-align-center-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-center-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 @mixin style-box {
