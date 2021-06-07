@@ -22,6 +22,7 @@ body {
     height: 7%;
     padding-block-start: 8px;
     box-shadow: 0px 1px 7px -1px grey;
+    z-index: 1;
 }
 
 .logo {
@@ -30,13 +31,11 @@ body {
 
 .container {
     @include flex-center-column;
-    height: 100%;
-    margin-top: 22rem;
 }
 
 .localisation {
     @include flex-center-column;
-    margin-block-start: 62px;
+    margin-block-start: 54px;
     background-color: $background-color-Primaire;
     align-items: center;
     &_paris {
@@ -63,32 +62,31 @@ body {
     flex-direction: column;
     align-items: center;
     .main_fonctionnement-text {
-        align-self: flex-start;
-        padding-inline-start: 15px;
+        margin-inline-end: 10em;
     }
-    .main_fonctionnement_elemant-flex {
-        display: grid;
-        grid-template-columns: 1fr 1fr 5fr;
-        align-items: center;
+    .main_fonctionnement_elemant-shadow {
         box-shadow: 0 0 20px 0.2px lightgrey;
         border-radius: 18px;
         margin: 10px 0px;
-        width: 350px;
-        height: 80px;
+        width: 335px;
+        height: 70px;
+        padding-top: 10px;
+        .main_fonctionnement_elemant-grid {
+            display: grid;
+            grid-template-columns: 9% 14% 3fr;
+            align-items: center;
+        }
         .main_fonctionnement-icon {
             color: rgb(115 115 115 / 75%);
             margin-inline-end: 2rem;
             font-size: 26px;
         }
         .main_fonctionnement-icon-number {
-            background-color: $color-primaires;
+            background-color: #9356DC;
             color: white;
             border-radius: 50%;
             padding: 5px 10px;
-            margin-inline-end: 6%;
-            position: relative;
-            right: 48%;
-            margin: 11px;
+            margin: 11px 14px 11px -14px;
         }
     }
 }
