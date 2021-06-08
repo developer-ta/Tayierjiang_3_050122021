@@ -38,15 +38,17 @@ body {
     margin-block-start: 54px;
     background-color: $background-color-Primaire;
     align-items: center;
+    margin-bottom: 35px;
     &_paris {
         background-color: #e7e7e7;
         width: 100%;
         .fa-map-marker-alt {
-            padding-right: 10px;
+            padding-right: 15px;
         }
     }
     .info_Restaurant {
-        text-align: center
+        text-align: center;
+        margin-top: 25px;
     }
     .btn-Violet {
         @include btn-Violet;
@@ -61,6 +63,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 70px;
     .main_fonctionnement-text {
         margin-inline-end: 10em;
     }
@@ -71,6 +74,10 @@ body {
         width: 335px;
         height: 70px;
         padding-top: 10px;
+        background-color: $background-color-Primaire;
+        &:hover {
+            background-color: rgba($color-primaires, 15%)
+        }
         .main_fonctionnement_elemant-grid {
             display: grid;
             grid-template-columns: 9% 14% 3fr;
@@ -80,6 +87,9 @@ body {
             color: rgb(115 115 115 / 75%);
             margin-inline-end: 2rem;
             font-size: 26px;
+            &:hover {
+                color: rgba($color-primaires, 100%)
+            }
         }
         .main_fonctionnement-icon-number {
             background-color: #9356DC;
@@ -93,6 +103,8 @@ body {
 
 .restaurant {
     @include flex-main-box;
+    padding: 40px 20px 55px 20px;
+    margin-bottom: 40px;
     .restaurant_menu {
         @include style-box;
         &_image {
@@ -101,21 +113,50 @@ body {
         }
         .présentation_menu {
             display: flex;
-            justify-content: space-around;
             align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+            line-height: 6px;
+            font-family: Roboto, Roboto;
+            font-weight: 350;
             .fa-heart {
-                font-size: large;
+                font-size: 30px;
+                letter-spacing: 0.222em;
+                &:hover {
+                    font-weight: 600;
+                    font-size: 30px;
+                    background: linear-gradient(14deg, #ff79da, #9356dc);
+                    -webkit-background-clip: text;
+                    color: transparent;
+                    filter: drop-shadow(0px 1px 2px #ff79da);
+                }
             }
         }
         .nouveau_menu {
             position: relative;
             bottom: 12em;
-            left: 83px;
-            background-color: $color-tertiaire;
+            left: 13%;
+            background-color: #99E2D0;
             border-radius: 3px;
-            padding: 5px;
+            padding: 7px 16px;
+            color: #00000069;
         }
     }
+}
+
+footer {
+    background-color: $background-color-footer;
+    @include flex-center-column;
+    color: #eee;
+    .footer_icon-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.titles {
+    font-family: shrikhand;
 }
 
 // .menu {
