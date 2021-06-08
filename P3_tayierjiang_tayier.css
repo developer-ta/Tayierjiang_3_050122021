@@ -194,12 +194,19 @@ footer {
   flex: 100%;
   flex-direction: column;
   justify-content: center;
+  padding-left: 20px;
   color: #eee;
 }
 footer .footer_icon-flex {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+}
+footer .footer_icon-flex .footer_icon-flex-margin {
+  margin-block-start: 19px;
+}
+footer p,
+footer h2 {
+  margin-block-end: 0px;
 }
 
 .titles {
