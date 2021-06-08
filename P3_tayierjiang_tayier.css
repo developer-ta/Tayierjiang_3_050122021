@@ -34,16 +34,22 @@ body {
 }
 
 .logo {
-  display: inline-grid;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   position: fixed;
   background-color: white;
   top: 0;
   overflow: hidden;
-  height: 8%;
-  /* position: fixed; */
-  padding-block-start: 17px;
+  height: 7%;
+  z-index: 1;
+  padding-block-start: 8px;
+  box-shadow: 0px 1px 7px -1px #eee;
+}
+.logo.flash-retour {
+  font-size: x-large;
+  text-align: center;
+  align-items: center;
 }
 
 .container {
@@ -86,7 +92,20 @@ body {
   filter: drop-shadow(0px 0px 3px #9356dc);
 }
 
-.menu_btn {
+.main {
+  margin-block-start: 39px;
+  background-color: whitesmoke;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.main .menu-photo img {
+  height: 260px;
+  width: 100%;
+}
+.main .titles {
+  font-family: shrikhand, sans-serif;
+}
+.main .menu_btn {
   box-shadow: 0 0 20px 0.2px lightgrey;
   border-radius: 18px;
   height: 60px;
@@ -95,6 +114,17 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 5px 10px;
+}
+.main .btn-Violet {
+  overflow: hidden;
+  border-radius: 27px;
+  margin: 10px 0px;
+  text-align: center;
+  width: 220px;
+  color: #fff;
+  margin-bottom: 60px;
+  background: linear-gradient(165deg, #ff79da, #9356dc);
+  filter: drop-shadow(0px 0px 3px #9356dc);
 }
 
 .main_fonctionnement {
@@ -210,5 +240,5 @@ footer h2 {
 }
 
 .titles {
-  font-family: shrikhand;
+  font-family: shrikhand, sans-serif;
 }

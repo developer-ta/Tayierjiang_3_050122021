@@ -43,22 +43,22 @@ $Texte:Roboto;
 }
 
 @mixin style-logo_box {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     position: fixed;
     background-color: white;
     top: 0;
     overflow: hidden;
-    height: 8%;
-    /* position: fixed; */
-    padding-block-start: 17px;
+    height: 7%;
+    z-index: 1;
+    padding-block-start: 8px;
 }
 
 @mixin flash-retour_accueil {
     font-size: x-large;
-    justify-self: center;
-    font-family: Roboto, sans-serif;
+    text-align: center;
+    align-items: center;
 }
 
 @mixin style-body {
