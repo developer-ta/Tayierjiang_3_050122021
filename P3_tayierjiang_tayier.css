@@ -148,6 +148,9 @@ body {
 .main_fonctionnement .main_fonctionnement_elemant-shadow:hover {
   background-color: rgba(147, 86, 220, 0.15);
 }
+.main_fonctionnement .main_fonctionnement_elemant-shadow:hover .main_fonctionnement-icon {
+  color: #9356dc;
+}
 .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement_elemant-grid {
   display: grid;
   grid-template-columns: 9% 14% 3fr;
@@ -157,9 +160,6 @@ body {
   color: rgba(115, 115, 115, 0.75);
   margin-inline-end: 2rem;
   font-size: 26px;
-}
-.main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement-icon:hover {
-  color: #9356dc;
 }
 .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement-icon-number {
   background-color: #9356DC;

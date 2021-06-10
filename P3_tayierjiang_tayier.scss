@@ -1,214 +1,220 @@
-@font-face {
-    font-family: Shrikhand, Roboto, sans-serif;
-    src: url(/Users/tayier/Library/Fonts/Shrikhand-Regular.otf);
-    src: url(/Users/tayier/Downloads/Roboto/Roboto-Medium.ttf);
-}
-
-@import 'utils/_Structure-web.scss';
-body {
-    @include style-body
-}
-
-.box-flex-row {
-    @include flex-align-center-row;
-}
-
-.logo_accueil {
-    position: fixed;
-    background-color: white;
-    top: 0;
-    overflow: hidden;
-    width: 100%;
-    height: 7%;
-    padding-block-start: 8px;
-    box-shadow: 0px 1px 7px -1px grey;
-    z-index: 1;
-}
-
-.logo {
-    @include style-logo_box;
-    box-shadow: 0px 1px 7px -1px #eee;
-    &.flash-retour {
-        @include flash-retour_accueil;
+    @font-face {
+        font-family: Shrikhand, Roboto, sans-serif;
+        src: url(/Users/tayier/Library/Fonts/Shrikhand-Regular.otf);
+        src: url(/Users/tayier/Downloads/Roboto/Roboto-Medium.ttf);
     }
-}
-
-.container {
-    @include flex-center-column;
-}
-
-.localisation {
-    @include flex-center-column;
-    margin-block-start: 54px;
-    background-color: $background-color-Primaire;
-    align-items: center;
-    margin-bottom: 35px;
-    &_paris {
-        background-color: #e7e7e7;
+    
+    @import 'utils/_Structure-web.scss';
+    body {
+        @include style-body
+    }
+    
+    .box-flex-row {
+        @include flex-align-center-row;
+    }
+    
+    .logo_accueil {
+        position: fixed;
+        background-color: white;
+        top: 0;
+        overflow: hidden;
         width: 100%;
-        .fa-map-marker-alt {
-            padding-right: 15px;
+        height: 7%;
+        padding-block-start: 8px;
+        box-shadow: 0px 1px 7px -1px grey;
+        z-index: 1;
+    }
+    
+    .logo {
+        @include style-logo_box;
+        box-shadow: 0px 1px 7px -1px #eee;
+        &.flash-retour {
+            @include flash-retour_accueil;
         }
     }
-    .info_Restaurant {
-        text-align: center;
-        margin-top: 25px;
+    
+    .container {
+        @include flex-center-column;
     }
-    .btn-Violet {
-        @include btn-Violet;
+    
+    .localisation {
+        @include flex-center-column;
+        margin-block-start: 54px;
+        background-color: $background-color-Primaire;
+        align-items: center;
+        margin-bottom: 35px;
+        &_paris {
+            background-color: #e7e7e7;
+            width: 100%;
+            .fa-map-marker-alt {
+                padding-right: 15px;
+            }
+        }
+        .info_Restaurant {
+            text-align: center;
+            margin-top: 25px;
+        }
+        .btn-Violet {
+            @include btn-Violet;
+        }
     }
-}
-
-.main {
-    margin-block-start: 39px;
-    background-color: $background-color-Primaire;
-    align-items: center;
-    margin-bottom: 35px;
-    .menu-photo img {
-        height: 260px;
-        width: 100%;
+    
+    .main {
+        margin-block-start: 39px;
+        background-color: $background-color-Primaire;
+        align-items: center;
+        margin-bottom: 35px;
+        .menu-photo img {
+            height: 260px;
+            width: 100%;
+        }
+        .titles {
+            @include font-logo_titres;
+        }
+        .fa-heart {}
+        .menu_option {}
+        .menu_option_LeChoix {}
+        .menu-underling {}
+        .menu_btn {
+            @include box-shadow-menu-button;
+        }
+        .menu_text {}
+        .prix {}
+        .btn-Violet {
+            @include btn-Violet;
+        }
     }
+    
+    .main_fonctionnement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+        .main_fonctionnement-text {
+            margin-inline-end: 10em;
+        }
+        // .main_fonctionnement_elemant-shadow:hover .main_fonctionnement-icon {
+        //     color: rgba($color-primaires, 100%)
+        // }
+        .main_fonctionnement_elemant-shadow {
+            box-shadow: 0 0 20px 0.2px lightgrey;
+            border-radius: 18px;
+            margin: 10px 0px;
+            width: 335px;
+            height: 70px;
+            padding-top: 10px;
+            background-color: $background-color-Primaire;
+            &:hover {
+                background-color: rgba($color-primaires, 15%);
+                .main_fonctionnement-icon {
+                    color: rgba($color-primaires, 100%)
+                }
+            }
+            .main_fonctionnement_elemant-grid {
+                display: grid;
+                grid-template-columns: 9% 14% 3fr;
+                align-items: center;
+            }
+            .main_fonctionnement-icon {
+                color: rgb(115 115 115 / 75%);
+                margin-inline-end: 2rem;
+                font-size: 26px;
+                // &:hover {
+                //     color: rgba($color-primaires, 100%)
+                // }
+            }
+            .main_fonctionnement-icon-number {
+                background-color: #9356DC;
+                color: white;
+                border-radius: 50%;
+                padding: 5px 10px;
+                margin: 11px 14px 11px -14px;
+            }
+        }
+    }
+    
+    .restaurant {
+        @include flex-main-box;
+        padding: 40px 20px 55px 20px;
+        margin-bottom: 40px;
+        .restaurant_menu {
+            @include style-box;
+            &_image {
+                height: 175px;
+                width: 100%;
+            }
+            .présentation_menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0px 20px;
+                line-height: 6px;
+                font-family: Roboto, Roboto;
+                font-weight: 350;
+                .fa-heart {
+                    font-size: 30px;
+                    letter-spacing: 0.222em;
+                    &:hover {
+                        font-weight: 600;
+                        font-size: 30px;
+                        background: linear-gradient(14deg, #ff79da, #9356dc);
+                        -webkit-background-clip: text;
+                        color: transparent;
+                        filter: drop-shadow(0px 1px 2px #ff79da);
+                    }
+                }
+            }
+            .nouveau_menu {
+                position: relative;
+                bottom: 12em;
+                left: 13%;
+                background-color: #99E2D0;
+                border-radius: 3px;
+                padding: 7px 16px;
+                color: #00000069;
+            }
+        }
+    }
+    
+    footer {
+        background-color: $background-color-footer;
+        @include flex-center-column;
+        padding-left: 20px;
+        color: #eee;
+        .footer_icon-flex {
+            display: grid;
+            grid-template-columns: 1fr 10fr;
+            .footer_icon-flex-margin {
+                margin-block-start: 19px;
+            }
+        }
+        p,
+        h2 {
+            margin-block-end: 0px;
+        }
+    }
+    
     .titles {
         @include font-logo_titres;
     }
-    .fa-heart {}
-    .menu_option {}
-    .menu_option_LeChoix {}
-    .menu-underling {}
-    .menu_btn {
-        @include box-shadow-menu-button;
-    }
-    .menu_text {}
-    .prix {}
-    .btn-Violet {
-        @include btn-Violet;
-    }
-}
-
-.main_fonctionnement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 70px;
-    .main_fonctionnement-text {
-        margin-inline-end: 10em;
-    }
-    .main_fonctionnement_elemant-shadow {
-        box-shadow: 0 0 20px 0.2px lightgrey;
-        border-radius: 18px;
-        margin: 10px 0px;
-        width: 335px;
-        height: 70px;
-        padding-top: 10px;
-        background-color: $background-color-Primaire;
-        &:hover {
-            background-color: rgba($color-primaires, 15%)
-        }
-        .main_fonctionnement_elemant-grid {
-            display: grid;
-            grid-template-columns: 9% 14% 3fr;
-            align-items: center;
-        }
-        .main_fonctionnement-icon {
-            color: rgb(115 115 115 / 75%);
-            margin-inline-end: 2rem;
-            font-size: 26px;
-            &:hover {
-                color: rgba($color-primaires, 100%)
-            }
-        }
-        .main_fonctionnement-icon-number {
-            background-color: #9356DC;
-            color: white;
-            border-radius: 50%;
-            padding: 5px 10px;
-            margin: 11px 14px 11px -14px;
-        }
-    }
-}
-
-.restaurant {
-    @include flex-main-box;
-    padding: 40px 20px 55px 20px;
-    margin-bottom: 40px;
-    .restaurant_menu {
-        @include style-box;
-        &_image {
-            height: 175px;
-            width: 100%;
-        }
-        .présentation_menu {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0px 20px;
-            line-height: 6px;
-            font-family: Roboto, Roboto;
-            font-weight: 350;
-            .fa-heart {
-                font-size: 30px;
-                letter-spacing: 0.222em;
-                &:hover {
-                    font-weight: 600;
-                    font-size: 30px;
-                    background: linear-gradient(14deg, #ff79da, #9356dc);
-                    -webkit-background-clip: text;
-                    color: transparent;
-                    filter: drop-shadow(0px 1px 2px #ff79da);
-                }
-            }
-        }
-        .nouveau_menu {
-            position: relative;
-            bottom: 12em;
-            left: 13%;
-            background-color: #99E2D0;
-            border-radius: 3px;
-            padding: 7px 16px;
-            color: #00000069;
-        }
-    }
-}
-
-footer {
-    background-color: $background-color-footer;
-    @include flex-center-column;
-    padding-left: 20px;
-    color: #eee;
-    .footer_icon-flex {
-        display: grid;
-        grid-template-columns: 1fr 10fr;
-        .footer_icon-flex-margin {
-            margin-block-start: 19px;
-        }
-    }
-    p,
-    h2 {
-        margin-block-end: 0px;
-    }
-}
-
-.titles {
-    @include font-logo_titres;
-}
-
-// .menu {
-//     background-color: whitesmoke;
-//     position: relative;
-//     bottom: 40px;
-//     border-radius: 33px 33px 0px 0px;
-//     padding: 20px;
-// }
-// body {
-//     height: 10%;
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-//     font-family: Roboto, sans-serif;
-//     image-rendering: pixelated;
-//     justify-content: center;
-// }
-// .title__menu hr {
-//     color:rgb(red, green, blue);
-//     width: 20px;
-// }
+    
+    // .menu {
+    //     background-color: whitesmoke;
+    //     position: relative;
+    //     bottom: 40px;
+    //     border-radius: 33px 33px 0px 0px;
+    //     padding: 20px;
+    // }
+    // body {
+    //     height: 10%;
+    //     box-sizing: border-box;
+    //     margin: 0;
+    //     padding: 0;
+    //     font-family: Roboto, sans-serif;
+    //     image-rendering: pixelated;
+    //     justify-content: center;
+    // }
+    // .title__menu hr {
+    //     color:rgb(red, green, blue);
+    //     width: 20px;
+    // }
