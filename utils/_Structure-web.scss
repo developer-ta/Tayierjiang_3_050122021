@@ -89,6 +89,14 @@ $Texte:Roboto;
     flex: 100%;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-center-column-no-align {
+    display: flex;
+    flex: 100%;
+    flex-direction: column;
+    justify-content: center;
 }
 
 @mixin flex-align-center-row {

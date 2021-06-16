@@ -51,13 +51,15 @@ body {
   display: flex;
   flex: 100%;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  align-items: center; }
 
 .localisation {
   display: flex;
   flex: 100%;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-block-start: 54px;
   background-color: whitesmoke;
   align-items: center;
@@ -70,16 +72,17 @@ body {
   .localisation .info_Restaurant {
     text-align: center;
     margin-top: 25px; }
-  .localisation .btn-Violet {
-    overflow: hidden;
-    border-radius: 27px;
-    margin: 10px 0px;
-    text-align: center;
-    width: 220px;
-    color: #fff;
-    margin-bottom: 60px;
-    background: linear-gradient(165deg, #ff79da, #9356dc);
-    filter: drop-shadow(0px 0px 3px #9356dc); }
+
+.btn-Violet {
+  overflow: hidden;
+  border-radius: 27px;
+  margin: 10px 0px;
+  text-align: center;
+  width: 220px;
+  color: #fff;
+  margin-bottom: 60px;
+  background: linear-gradient(165deg, #ff79da, #9356dc);
+  filter: drop-shadow(0px 0px 3px #9356dc); }
 
 .container.container-bg-color {
   background-color: whitesmoke; }
@@ -128,16 +131,6 @@ body {
       font-weight: lighter; }
     .container.container-bg-color .main .prix {
       margin-block-start: 30px; }
-    .container.container-bg-color .main .btn-Violet {
-      overflow: hidden;
-      border-radius: 27px;
-      margin: 10px 0px;
-      text-align: center;
-      width: 220px;
-      color: #fff;
-      margin-bottom: 60px;
-      background: linear-gradient(165deg, #ff79da, #9356dc);
-      filter: drop-shadow(0px 0px 3px #9356dc); }
 
 .main_fonctionnement {
   display: flex;

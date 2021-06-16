@@ -54,9 +54,10 @@
             text-align: center;
             margin-top: 25px;
         }
-        .btn-Violet {
-            @include btn-Violet;
-        }
+    }
+    
+    .btn-Violet {
+        @include btn-Violet;
     }
     
     // ----------page 2 -------------------------À la française-------------------------------
@@ -108,9 +109,7 @@
             .prix {
                 margin-block-start: 30px;
             }
-            .btn-Violet {
-                @include btn-Violet;
-            }
+            .btn-Violet {}
         }
     }
     
@@ -207,7 +206,7 @@
     
     footer {
         background-color: $background-color-footer;
-        @include flex-center-column;
+        @include flex-center-column-no-align;
         padding-left: 20px;
         color: #eee;
         .footer_icon-flex {
