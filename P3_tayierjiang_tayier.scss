@@ -206,13 +206,14 @@
     footer {
         background-color: $background-color-footer;
         @include flex-center-column-no-align;
-        padding-left: 20px;
+        padding: 20px;
         color: #eee;
         .footer_icon-flex {
             display: grid;
             grid-template-columns: 1fr 10fr;
+            align-items: baseline;
             .footer_icon-flex-margin {
-                margin-block-start: 19px;
+                margin-block-start: 15px;
             }
         }
         p,
@@ -223,6 +224,7 @@
     
     .titles {
         @include font-logo_titres;
+        line-height: 50px;
     }
     
     // .menu {
