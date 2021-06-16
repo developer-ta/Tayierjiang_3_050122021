@@ -108,9 +108,6 @@ body {
       flex-direction: row;
       justify-content: space-between;
       align-items: center; }
-    .container.container-bg-color .main .fa-heart {
-      font-size: 30px;
-      letter-spacing: 1.222rem; }
     .container.container-bg-color .main .menu-underling {
       border: #99E2D0 2px solid;
       width: 37px;
@@ -188,16 +185,6 @@ body {
       line-height: 6px;
       font-family: Roboto, Roboto;
       font-weight: 350; }
-      .restaurant .restaurant_menu .présentation_menu .fa-heart {
-        font-size: 30px;
-        letter-spacing: 0.222em; }
-        .restaurant .restaurant_menu .présentation_menu .fa-heart:hover {
-          font-weight: 600;
-          font-size: 30px;
-          background: linear-gradient(14deg, #ff79da, #9356dc);
-          -webkit-background-clip: text;
-          color: transparent;
-          filter: drop-shadow(0px 1px 2px #ff79da); }
     .restaurant .restaurant_menu .nouveau_menu {
       position: relative;
       bottom: 12em;
@@ -206,6 +193,17 @@ body {
       border-radius: 3px;
       padding: 7px 16px;
       color: #00000069; }
+
+.fa-heart {
+  font-size: 30px;
+  letter-spacing: 0.222em; }
+  .fa-heart:hover {
+    font-weight: 600;
+    font-size: 30px;
+    background: linear-gradient(14deg, #ff79da, #9356dc);
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0px 1px 2px #ff79da); }
 
 footer {
   background-color: black;

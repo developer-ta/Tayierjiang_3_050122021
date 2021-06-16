@@ -21,6 +21,19 @@ $Texte:Roboto;
     box-shadow: 0px 2px 5px #9356dc;
 }
 
+@mixin fa-heart {
+    font-size: 30px;
+    letter-spacing: 0.222em;
+    &:hover {
+        font-weight: 600;
+        font-size: 30px;
+        background: linear-gradient(14deg, #ff79da, #9356dc);
+        -webkit-background-clip: text;
+        color: transparent;
+        filter: drop-shadow(0px 1px 2px #ff79da);
+    }
+}
+
 @mixin font-logo_titres() {
     font-family: shrikhand, sans-serif;
 }

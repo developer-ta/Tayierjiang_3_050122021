@@ -88,10 +88,6 @@
                 justify-content: space-between;
                 align-items: center;
             }
-            .fa-heart {
-                font-size: 30px;
-                letter-spacing: 1.222rem;
-            }
             .menu_option {}
             .menu_option_LeChoix {}
             .menu-underling {
@@ -178,18 +174,6 @@
                 line-height: 6px;
                 font-family: Roboto, Roboto;
                 font-weight: 350;
-                .fa-heart {
-                    font-size: 30px;
-                    letter-spacing: 0.222em;
-                    &:hover {
-                        font-weight: 600;
-                        font-size: 30px;
-                        background: linear-gradient(14deg, #ff79da, #9356dc);
-                        -webkit-background-clip: text;
-                        color: transparent;
-                        filter: drop-shadow(0px 1px 2px #ff79da);
-                    }
-                }
             }
             .nouveau_menu {
                 position: relative;
@@ -201,6 +185,10 @@
                 color: #00000069;
             }
         }
+    }
+    
+    .fa-heart {
+        @include fa-heart;
     }
     
     footer {
