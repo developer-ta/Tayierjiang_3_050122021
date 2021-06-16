@@ -41,7 +41,7 @@
         @include flex-center-column;
         margin-block-start: 54px;
         background-color: $background-color-Primaire;
-        align-items: center;
+        width: 100%;
         margin-bottom: 35px;
         &_paris {
             background-color: #e7e7e7;
@@ -164,7 +164,6 @@
     .restaurant {
         @include flex-main-box;
         padding: 40px 20px 55px 20px;
-        margin-bottom: 40px;
         .restaurant_menu {
             @include style-box;
             &_image {

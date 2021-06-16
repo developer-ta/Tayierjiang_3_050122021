@@ -62,7 +62,7 @@ body {
   align-items: center;
   margin-block-start: 54px;
   background-color: whitesmoke;
-  align-items: center;
+  width: 100%;
   margin-bottom: 35px; }
   .localisation_paris {
     background-color: #e7e7e7;
@@ -171,8 +171,7 @@ body {
   display: flex;
   flex: 100%;
   flex-direction: column;
-  padding: 40px 20px 55px 20px;
-  margin-bottom: 40px; }
+  padding: 40px 20px 55px 20px; }
   .restaurant .restaurant_menu {
     box-shadow: 0 0 20px 0.2px lightgrey;
     overflow: hidden;
