@@ -1,16 +1,29 @@
+// ----------- --------------------------codes générales-------------------------------//
 @font-face {
     font-family: Shrikhand, Roboto, sans-serif;
     src: url(/Users/tayier/Library/Fonts/Shrikhand-Regular.otf);
     src: url(/Users/tayier/Downloads/Roboto/Roboto-Medium.ttf);
 }
 
-@import 'utils/_Structure-web.scss';
+@import "utils/_Structure-web.scss";
 body {
-    @include style-body
+    @include style-body;
+}
+
+.logo {
+    @include style-logo_box;
+    box-shadow: 0px 1px 7px -1px #eee;
+    &.flash-retour {
+        @include flash-retour_accueil;
+    }
 }
 
 .box-flex-row {
     @include flex-align-center-row;
+}
+
+.container {
+    @include flex-center-column;
 }
 
 .logo_accueil {
@@ -26,6 +39,10 @@ body {
     z-index: 1;
 }
 
+.btn-Violet {
+    @include btn-Violet;
+}
+
 .logo {
     @include style-logo_box;
     box-shadow: 0px 1px 7px -1px #eee;
@@ -38,6 +55,11 @@ body {
     @include flex-center-column;
 }
 
+.titles {
+    @include font-logo_titres;
+}
+
+// ----------- --------------------------La page d'accueil-------------------------------//
 .localisation {
     @include flex-center-column;
     -webkit-margin-before: 54px;
@@ -58,12 +80,8 @@ body {
     }
 }
 
-.btn-Violet {
-    @include btn-Violet;
-}
-
-// ----------page 2 -------------------------À la française-------------------------------
-.container.container-bg-color {
+// ----------page menu -------------------------1/2/3/4-------------------------------//
+.container-bg-color {
     background-color: whitesmoke;
     .main {
         -webkit-margin-before: 39px;
@@ -100,52 +118,68 @@ body {
             margin: 6px 0px;
         }
         .menu_animation {
-            animation: opa-1 3s ease-out;
-            animation-fill-mode: forwards;
+            // animation: opa-1 3s ease-out;
+            // animation-fill-mode: forwards;
         }
         .menu_btn {
             @include box-shadow_menu_button;
-            animation: opa-2 3s ease-in-out 3s;
-            @for $i from 0 to 4 {
+            @for $i from 1 through 3 {
                 &-#{$i} {
-                    animation-delay: 250ms*$i;
+                    animation: opa-#{$i} 3950ms+350ms*$i ease-in-out;
+                    -webkit-animation: opa-#{$i} 3950ms+350ms*$i linear;
+                }
+            }
+            @keyframes opa-1 {
+                0% {
+                    opacity: 1;
+                }
+                40% {
+                    opacity: 0;
+                }
+                60% {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes opa-2 {
+                0% {
+                    opacity: 1;
+                }
+                37% {
+                    opacity: 0;
+                }
+                60% {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            @keyframes opa-3 {
+                0% {
+                    opacity: 1;
+                }
+                35% {
+                    opacity: 0;
+                }
+                60% {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
                 }
             }
         }
-        @keyframes opa-1 {
-            0% {
-                opacity: 1;
-            }
-            90% {
-                opacity: 0.5;
-            }
-            to {
-                opacity: O;
-            }
-        }
-        @keyframes opa-2 {
-            25% {
-                opacity: 0;
-                display: block;
-            }
-            50% {
-                opacity: 0.5;
-                display: block;
-            }
-            to {
-                opacity: 1;
-                display: block;
-            }
-        }
-        .menu_text {
-            line-height: 0.3;
-            font-weight: lighter;
-        }
-        .prix {
-            -webkit-margin-before: 30px;
-            margin-block-start: 30px;
-        }
-        .btn-Violet {}
+    }
+    .menu_text {
+        line-height: 0.3;
+        font-weight: lighter;
+    }
+    .prix {
+        -webkit-margin-before: 30px;
+        margin-block-start: 30px;
     }
 }
 
@@ -155,8 +189,7 @@ body {
     align-items: center;
     margin-bottom: 70px;
     .main_fonctionnement-text {
-        -webkit-margin-end: 10em;
-        margin-inline-end: 10em;
+        margin: 0;
     }
     // .main_fonctionnement_elemant-shadow:hover .main_fonctionnement-icon {
     //     color: rgba($color-primaires, 100%)
@@ -248,32 +281,10 @@ footer {
         }
     }
     p {
-        -webkit-margin-after: 0px;
-        margin-block-end: 0px;
+        margin: 0;
     }
 }
 
 .titles {
     @include font-logo_titres;
 }
-
-// .menu {
-//     background-color: whitesmoke;
-//     position: relative;
-//     bottom: 40px;
-//     border-radius: 33px 33px 0px 0px;
-//     padding: 20px;
-// }
-// body {
-//     height: 10%;
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-//     font-family: Roboto, sans-serif;
-//     image-rendering: pixelated;
-//     justify-content: center;
-// }
-// .title__menu hr {
-//     color:rgb(red, green, blue);
-//     width: 20px;
-// }

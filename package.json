@@ -4,9 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-
         "sass": "node_modules/.bin/node-sass --watch ./P3_tayierjiang_tayier.scss ./P3_tayierjiang_tayier.css --style expanded"
-
     },
     "repository": {
         "type": "git",
@@ -19,6 +17,7 @@
     },
     "homepage": "https://github.com/developeur-ta/Tayierjiang_3_050122021#readme",
     "dependencies": {
-        "node-sass": "^6.0.0"
+        "node-sass": "^6.0.0",
+        "sass-lint": "^1.13.1"
     }
 }
