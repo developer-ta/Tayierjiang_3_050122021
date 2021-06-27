@@ -77,13 +77,15 @@ $Texte:Roboto;
 }
 
 @mixin style-body {
+    display: flex;
     height: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: Roboto, shrikhand, sans-serif;
-    image-rendering: pixelated;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 @mixin positon-imge {
