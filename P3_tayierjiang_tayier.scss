@@ -1,47 +1,25 @@
-@charset "UTF-8";
+// ----------- --------------------------codes générales-------------------------------//
 @font-face {
     font-family: Shrikhand, Roboto, sans-serif;
     src: url(/Users/tayier/Library/Fonts/Shrikhand-Regular.otf);
     src: url(/Users/tayier/Downloads/Roboto/Roboto-Medium.ttf);
 }
 
+@import "utils/_Structure-web.scss";
 body {
-    display: flex;
-    height: 100%;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Roboto, shrikhand, sans-serif;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include style-body;
 }
 
 .logo {
-    display: grid;
-    grid-template-columns: auto auto 10%;
-    width: 100%;
-    position: fixed;
-    background-color: white;
-    top: 0;
-    overflow: hidden;
-    height: 7%;
-    z-index: 1;
-    padding-block-start: 8px;
+    @include style-logo_box;
     box-shadow: 0px 1px 7px -1px #eee;
-}
-
-.logo.flash-retour {
-    font-size: x-large;
-    text-align: center;
-    align-items: center;
+    &.flash-retour {
+        @include flash-retour_accueil;
+    }
 }
 
 .box-flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    @include flex-align-center-row;
 }
 
 .cintainer_main {
