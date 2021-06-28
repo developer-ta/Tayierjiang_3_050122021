@@ -131,57 +131,57 @@ body {
     background-color: whitesmoke;
     align-items: center;
     margin-bottom: 35px; }
-  .container-bg-color .main .menu-photo img {
-    height: 260px;
-    width: 100%;
-    margin-top: 18px; }
-  .container-bg-color .main .main_menu {
-    /* box-shadow: 0 0 20px 0.2px grey; */
-    border-radius: 45px 45px 0px 0px;
-    -webkit-margin-before: -55px;
-    margin-block-start: -55px;
-    position: relative;
-    background-color: whitesmoke;
-    padding: 0px 15px 10px 10px; }
-  .container-bg-color .main .titres {
-    font-family: shrikhand, sans-serif;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center; }
-  .container-bg-color .main .menu-underling {
-    border: #99E2D0 2px solid;
-    width: 37px;
-    margin: 6px 0px; }
-  .container-bg-color .main .menu_btn {
-    box-shadow: 1px 5px 20px 13.2px #e2e2e2;
-    border-radius: 18px;
-    height: 60px;
-    width: 330px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 16px 5px 8px;
-    margin: 15px 0px;
-    border-radius: 18px;
-    height: 60px;
-    width: 330px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 16px 5px 8px;
-    margin: 15px 0px; }
-  .container-bg-color .main .menu_btn-1 {
-    animation: opa-1 4300ms ease-in-out;
-    -webkit-animation: opa-1 4300ms linear; }
-  .container-bg-color .main .menu_btn-2 {
-    animation: opa-2 4650ms ease-in-out;
-    -webkit-animation: opa-2 4650ms linear; }
-  .container-bg-color .main .menu_btn-3 {
-    animation: opa-3 5000ms ease-in-out;
-    -webkit-animation: opa-3 5000ms linear; }
+    .container-bg-color .main .menu-photo img {
+      height: 260px;
+      width: 100%;
+      margin-top: 18px; }
+    .container-bg-color .main .main_menu {
+      /* box-shadow: 0 0 20px 0.2px grey; */
+      border-radius: 45px 45px 0px 0px;
+      -webkit-margin-before: -55px;
+      margin-block-start: -55px;
+      position: relative;
+      background-color: whitesmoke;
+      padding: 0px 15px 10px 10px; }
+    .container-bg-color .main .titres {
+      font-family: shrikhand, sans-serif;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center; }
+    .container-bg-color .main .menu-underling {
+      border: #99E2D0 2px solid;
+      width: 37px;
+      margin: 6px 0px; }
+    .container-bg-color .main .menu_btn {
+      box-shadow: 1px 5px 20px 13.2px #e2e2e2;
+      border-radius: 18px;
+      height: 60px;
+      width: 330px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 16px 5px 8px;
+      margin: 15px 0px;
+      border-radius: 18px;
+      height: 60px;
+      width: 330px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px 16px 5px 8px;
+      margin: 15px 0px; }
+    .container-bg-color .main .menu_btn-1 {
+      animation: opa-1 4300ms ease-in-out;
+      -webkit-animation: opa-1 4300ms linear; }
+    .container-bg-color .main .menu_btn-2 {
+      animation: opa-2 4650ms ease-in-out;
+      -webkit-animation: opa-2 4650ms linear; }
+    .container-bg-color .main .menu_btn-3 {
+      animation: opa-3 5000ms ease-in-out;
+      -webkit-animation: opa-3 5000ms linear; }
 
 @keyframes opa-1 {
   0% {
@@ -234,28 +234,28 @@ body {
     height: 70px;
     padding-top: 15px;
     background-color: whitesmoke; }
-  .main_fonctionnement .main_fonctionnement_elemant-shadow:hover {
-    background-color: rgba(147, 86, 220, 0.15); }
-  .main_fonctionnement .main_fonctionnement_elemant-shadow:hover .main_fonctionnement-icon {
-    color: #9356DC; }
-  .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement_elemant-grid {
-    /* display: grid; */
-    /* grid-template-columns: 9% 14% 3fr; */
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center; }
-  .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement-icon {
-    color: rgba(115, 115, 115, 0.75);
-    -webkit-margin-end: 2rem;
-    margin-inline-end: 2rem;
-    font-size: 26px; }
-  .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement-icon-number {
-    background-color: #9356DC;
-    color: white;
-    border-radius: 50%;
-    padding: 5px 10px;
-    margin: 11px 14px 11px -14px; }
+    .main_fonctionnement .main_fonctionnement_elemant-shadow:hover {
+      background-color: rgba(147, 86, 220, 0.15); }
+    .main_fonctionnement .main_fonctionnement_elemant-shadow:hover .main_fonctionnement-icon {
+      color: #9356DC; }
+    .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement_elemant-grid {
+      /* display: grid; */
+      /* grid-template-columns: 9% 14% 3fr; */
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+    .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement-icon {
+      color: rgba(115, 115, 115, 0.75);
+      -webkit-margin-end: 2rem;
+      margin-inline-end: 2rem;
+      font-size: 26px; }
+    .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement-icon-number {
+      background-color: #9356DC;
+      color: white;
+      border-radius: 50%;
+      padding: 5px 10px;
+      margin: 11px 14px 11px -14px; }
 
 .restaurant {
   background-color: whitesmoke;
@@ -268,25 +268,25 @@ body {
     overflow: hidden;
     border-radius: 18px;
     margin: 10px 0px; }
+    .restaurant .restaurant_menu .présentation_menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 20px;
+      line-height: 6px;
+      font-family: Roboto, Roboto;
+      font-weight: 350; }
+    .restaurant .restaurant_menu .nouveau_menu {
+      position: relative;
+      bottom: 10em;
+      left: 70%;
+      background-color: #99E2D0;
+      border-radius: 1px;
+      padding: 7px 16px;
+      color: rgba(0, 0, 0, 0.7); }
   .restaurant .restaurant_menu_image {
     height: 175px;
     width: 100%; }
-  .restaurant .restaurant_menu .présentation_menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 20px;
-    line-height: 6px;
-    font-family: Roboto, Roboto;
-    font-weight: 350; }
-  .restaurant .restaurant_menu .nouveau_menu {
-    position: relative;
-    bottom: 12em;
-    left: 13%;
-    background-color: #99E2D0;
-    border-radius: 3px;
-    padding: 7px 16px;
-    color: #00000069; }
 
 .fa-heart {
   font-size: 30px;
@@ -357,6 +357,18 @@ footer {
       padding-top: 0px;
       background-color: whitesmoke;
       width: 44%; }
+      .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement-icon {
+        color: rgba(115, 115, 115, 0.75);
+        -webkit-margin-end: 2rem;
+        margin-inline-end: 2rem;
+        font-size: 26px; }
+      .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement_elemant-grid {
+        /* display: grid; */
+        /* grid-template-columns: 9% 14% 3fr; */
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center; }
     .main_fonctionnement .main_fonctionnement-flex {
       display: flex;
       align-items: center;
@@ -364,18 +376,6 @@ footer {
       flex-wrap: wrap;
       flex-direction: row;
       max-width: 765px; }
-    .main_fonctionnement .main_fonctionnement_elemant-grid {
-      /* display: grid; */
-      /* grid-template-columns: 9% 14% 3fr; */
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center; }
-    .main_fonctionnement .main_fonctionnement-icon {
-      color: rgba(115, 115, 115, 0.75);
-      -webkit-margin-end: 2rem;
-      margin-inline-end: 2rem;
-      font-size: 26px; }
     .main_fonctionnement .main_fonctionnement-icon-number {
       background-color: #9356DC;
       color: white;
@@ -384,6 +384,8 @@ footer {
       margin: 11px 14px 11px -14px; } }
 
 @media (min-width: 769px), (max-width: 1380px) and (min-width: 1380px) {
+  .box-transform {
+    transform: scale(1.2); }
   .localisation {
     margin-top: 112px;
     transform: scale(1.1, 1.3);

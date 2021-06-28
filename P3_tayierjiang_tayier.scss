@@ -101,56 +101,56 @@ body {
         background-color: whitesmoke;
         align-items: center;
         margin-bottom: 35px;
-    }
-    .main .menu-photo img {
-        height: 260px;
-        width: 100%;
-        margin-top: 18px;
-    }
-    .main .main_menu {
-        /* box-shadow: 0 0 20px 0.2px grey; */
-        border-radius: 45px 45px 0px 0px;
-        -webkit-margin-before: -55px;
-        margin-block-start: -55px;
-        position: relative;
-        background-color: whitesmoke;
-        padding: 0px 15px 10px 10px;
-    }
-    .main .titres {
-        @include font-logo_titres;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .main .menu-underling {
-        border: $color-tertiaire 2px solid;
-        width: 37px;
-        margin: 6px 0px;
-    }
-    .main .menu_btn {
-        @include box-shadow_menu_button;
-        border-radius: 18px;
-        height: 60px;
-        width: 330px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 5px 16px 5px 8px;
-        margin: 15px 0px;
-    }
-    .main .menu_btn-1 {
-        animation: opa-1 4300ms ease-in-out;
-        -webkit-animation: opa-1 4300ms linear;
-    }
-    .main .menu_btn-2 {
-        animation: opa-2 4650ms ease-in-out;
-        -webkit-animation: opa-2 4650ms linear;
-    }
-    .main .menu_btn-3 {
-        animation: opa-3 5000ms ease-in-out;
-        -webkit-animation: opa-3 5000ms linear;
+        .menu-photo img {
+            height: 260px;
+            width: 100%;
+            margin-top: 18px;
+        }
+        .main_menu {
+            /* box-shadow: 0 0 20px 0.2px grey; */
+            border-radius: 45px 45px 0px 0px;
+            -webkit-margin-before: -55px;
+            margin-block-start: -55px;
+            position: relative;
+            background-color: whitesmoke;
+            padding: 0px 15px 10px 10px;
+        }
+        .titres {
+            @include font-logo_titres;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .menu-underling {
+            border: $color-tertiaire 2px solid;
+            width: 37px;
+            margin: 6px 0px;
+        }
+        .menu_btn {
+            @include box-shadow_menu_button;
+            border-radius: 18px;
+            height: 60px;
+            width: 330px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 16px 5px 8px;
+            margin: 15px 0px;
+        }
+        .menu_btn-1 {
+            animation: opa-1 4300ms ease-in-out;
+            -webkit-animation: opa-1 4300ms linear;
+        }
+        .menu_btn-2 {
+            animation: opa-2 4650ms ease-in-out;
+            -webkit-animation: opa-2 4650ms linear;
+        }
+        .menu_btn-3 {
+            animation: opa-3 5000ms ease-in-out;
+            -webkit-animation: opa-3 5000ms linear;
+        }
     }
     @keyframes opa-1 {
         0% {
@@ -220,33 +220,33 @@ body {
         height: 70px;
         padding-top: 15px;
         background-color: whitesmoke;
-    }
-    .main_fonctionnement_elemant-shadow:hover {
-        background-color: rgba(147, 86, 220, 0.15);
-    }
-    .main_fonctionnement_elemant-shadow:hover .main_fonctionnement-icon {
-        color: $color-primaires;
-    }
-    .main_fonctionnement_elemant-shadow .main_fonctionnement_elemant-grid {
-        /* display: grid; */
-        /* grid-template-columns: 9% 14% 3fr; */
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    .main_fonctionnement_elemant-shadow .main_fonctionnement-icon {
-        color: rgba(115, 115, 115, 0.75);
-        -webkit-margin-end: 2rem;
-        margin-inline-end: 2rem;
-        font-size: 26px;
-    }
-    .main_fonctionnement_elemant-shadow .main_fonctionnement-icon-number {
-        background-color: $color-primaires;
-        color: white;
-        border-radius: 50%;
-        padding: 5px 10px;
-        margin: 11px 14px 11px -14px;
+        &:hover {
+            background-color: rgba(147, 86, 220, 0.15);
+        }
+        &:hover .main_fonctionnement-icon {
+            color: $color-primaires;
+        }
+        .main_fonctionnement_elemant-grid {
+            /* display: grid; */
+            /* grid-template-columns: 9% 14% 3fr; */
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .main_fonctionnement-icon {
+            color: rgba(115, 115, 115, 0.75);
+            -webkit-margin-end: 2rem;
+            margin-inline-end: 2rem;
+            font-size: 26px;
+        }
+        .main_fonctionnement-icon-number {
+            background-color: $color-primaires;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            margin: 11px 14px 11px -14px;
+        }
     }
 }
 
@@ -258,28 +258,28 @@ body {
         overflow: hidden;
         border-radius: 18px;
         margin: 10px 0px;
+        .présentation_menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 20px;
+            line-height: 6px;
+            font-family: Roboto, Roboto;
+            font-weight: 350;
+        }
+        .nouveau_menu {
+            position: relative;
+            bottom: 10em;
+            left: 70%;
+            background-color: #99E2D0;
+            border-radius: 1px;
+            padding: 7px 16px;
+            color: rgba(0, 0, 0, 0.7);
+        }
     }
     .restaurant_menu_image {
         height: 175px;
         width: 100%;
-    }
-    .restaurant_menu .présentation_menu {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px 20px;
-        line-height: 6px;
-        font-family: Roboto, Roboto;
-        font-weight: 350;
-    }
-    .restaurant_menu .nouveau_menu {
-        position: relative;
-        bottom: 12em;
-        left: 13%;
-        background-color: $color-tertiaire;
-        border-radius: 3px;
-        padding: 7px 16px;
-        color: #00000069;
     }
 }
 
@@ -354,6 +354,20 @@ footer {
             padding-top: 0px;
             background-color: whitesmoke;
             width: 44%;
+            .main_fonctionnement-icon {
+                color: rgba(115, 115, 115, 0.75);
+                -webkit-margin-end: 2rem;
+                margin-inline-end: 2rem;
+                font-size: 26px;
+            }
+            .main_fonctionnement_elemant-grid {
+                /* display: grid; */
+                /* grid-template-columns: 9% 14% 3fr; */
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+            }
         }
         .main_fonctionnement-flex {
             display: flex;
@@ -362,20 +376,6 @@ footer {
             flex-wrap: wrap;
             flex-direction: row;
             max-width: 765px;
-        }
-        .main_fonctionnement_elemant-grid {
-            /* display: grid; */
-            /* grid-template-columns: 9% 14% 3fr; */
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            align-items: center;
-        }
-        .main_fonctionnement-icon {
-            color: rgba(115, 115, 115, 0.75);
-            -webkit-margin-end: 2rem;
-            margin-inline-end: 2rem;
-            font-size: 26px;
         }
         .main_fonctionnement-icon-number {
             background-color: $color-primaires;
@@ -389,6 +389,9 @@ footer {
 
 @media (min-width: 769px),
 (max-width: 1380px) and (min-width: 1380px) {
+    .box-transform {
+        transform: scale(1.2);
+    }
     .localisation {
         margin-top: 112px;
         transform: scale(1.1, 1.3);
