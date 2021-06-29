@@ -10,9 +10,24 @@ body {
     @include style-body;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .logo {
-    @include style-logo_box;
+    display: flex;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    overflow: hidden;
+    height: 7%;
+    z-index: 1;
     box-shadow: 0px 1px 7px -1px #eee;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .logo.flash-retour {
@@ -60,15 +75,6 @@ body {
     }
 }
 
-.logo {
-    @include style-logo_box;
-    box-shadow: 0px 1px 7px -1px #eee;
-}
-
-.logo.flash-retour {
-    @include flash-retour_accueil;
-}
-
 .titles {
     @include font-logo_titres;
 }
@@ -105,6 +111,8 @@ body {
             height: 260px;
             width: 100%;
             margin-top: 18px;
+            object-fit: cover;
+            image-rendering: auto;
         }
         .main_menu {
             /* box-shadow: 0 0 20px 0.2px grey; */
@@ -281,6 +289,8 @@ body {
     .restaurant_menu_image {
         height: 275px;
         width: 100%;
+        object-fit: cover;
+        image-rendering: pixelated;
     }
 }
 
@@ -326,6 +336,9 @@ footer {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+        }
+        a {
+            flex: 46%
         }
         .restaurant_menu {
             box-shadow: 0 0 20px 0.2px lightgrey;
@@ -400,7 +413,7 @@ footer {
         margin-top: 112px;
         transform: scale(1.1, 1.3);
         max-width: 1255px;
-        // width: 91%;
+        width: 91%;
     }
     .restaurant {
         .restaurant-flex {
@@ -408,6 +421,9 @@ footer {
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+        }
+        a {
+            flex: 46%
         }
         .restaurant_menu {
             box-shadow: 0 0 20px 0.2px lightgrey;

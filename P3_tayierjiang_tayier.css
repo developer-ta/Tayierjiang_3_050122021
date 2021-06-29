@@ -15,9 +15,12 @@ body {
   align-items: center;
   flex-direction: column; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 .logo {
-  display: grid;
-  grid-template-columns: auto auto 10%;
+  display: flex;
   width: 100%;
   position: fixed;
   background-color: white;
@@ -25,8 +28,10 @@ body {
   overflow: hidden;
   height: 7%;
   z-index: 1;
-  padding-block-start: 8px;
-  box-shadow: 0px 1px 7px -1px #eee; }
+  box-shadow: 0px 1px 7px -1px #eee;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around; }
 
 .logo.flash-retour {
   font-size: x-large;
@@ -82,24 +87,6 @@ body {
     transform: scale(1.07);
     box-shadow: 0px 5px 3px 0px #73737369; }
 
-.logo {
-  display: grid;
-  grid-template-columns: auto auto 10%;
-  width: 100%;
-  position: fixed;
-  background-color: white;
-  top: 0;
-  overflow: hidden;
-  height: 7%;
-  z-index: 1;
-  padding-block-start: 8px;
-  box-shadow: 0px 1px 7px -1px #eee; }
-
-.logo.flash-retour {
-  font-size: x-large;
-  text-align: center;
-  align-items: center; }
-
 .titles {
   font-family: shrikhand, sans-serif; }
 
@@ -134,7 +121,9 @@ body {
     .container-bg-color .main .menu-photo img {
       height: 260px;
       width: 100%;
-      margin-top: 18px; }
+      margin-top: 18px;
+      object-fit: cover;
+      image-rendering: auto; }
     .container-bg-color .main .main_menu {
       /* box-shadow: 0 0 20px 0.2px grey; */
       border-radius: 45px 45px 0px 0px;
@@ -287,7 +276,9 @@ body {
       color: rgba(0, 0, 0, 0.7); }
   .restaurant .restaurant_menu_image {
     height: 275px;
-    width: 100%; }
+    width: 100%;
+    object-fit: cover;
+    image-rendering: pixelated; }
 
 .fa-heart {
   font-size: 30px;
@@ -334,6 +325,8 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
+  .restaurant a {
+    flex: 46%; }
   .restaurant .restaurant_menu {
     box-shadow: 0 0 20px 0.2px lightgrey;
     overflow: hidden;
@@ -390,12 +383,15 @@ footer {
   .localisation {
     margin-top: 112px;
     transform: scale(1.1, 1.3);
-    max-width: 1255px; }
+    max-width: 1255px;
+    width: 91%; }
   .restaurant .restaurant-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
+  .restaurant a {
+    flex: 46%; }
   .restaurant .restaurant_menu {
     box-shadow: 0 0 20px 0.2px lightgrey;
     overflow: hidden;
