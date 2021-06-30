@@ -125,7 +125,6 @@ a {
       object-fit: cover;
       image-rendering: auto; }
     .container-bg-color .main .main_menu {
-      /* box-shadow: 0 0 20px 0.2px grey; */
       border-radius: 45px 45px 0px 0px;
       -webkit-margin-before: -55px;
       margin-block-start: -55px;
@@ -141,7 +140,8 @@ a {
     .container-bg-color .main .menu-underling {
       border: #99E2D0 2px solid;
       width: 37px;
-      margin: 6px 0px; }
+      margin: 6px 0px;
+      background-color: #99E2D0; }
     .container-bg-color .main .menu_btn {
       box-shadow: 1px 5px 20px 13.2px #e2e2e2;
       border-radius: 18px;
