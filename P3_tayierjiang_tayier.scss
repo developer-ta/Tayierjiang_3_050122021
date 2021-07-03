@@ -125,6 +125,7 @@ a {
 
 .titles {
     @include font-logo_titres;
+    margin-left: 4%;
 }
 
 .localisation {
@@ -358,6 +359,7 @@ a {
 
 .restaurant {
     @include flex-main-box;
+    padding-bottom: 40px;
     h2 {
         margin-left: 4%;
     }
@@ -367,11 +369,23 @@ a {
         margin-left: 4%;
         margin-right: 4%;
     }
+    .nouveau_menu {
+        position: relative;
+        bottom: 10em;
+        left: 70%;
+        background-color: #99e2d0;
+        border-radius: 1px;
+        padding: 5px 14px;
+        color: #00000073;
+    }
     .restaurant_menu {
         box-shadow: 0 0 20px 0.2px lightgrey;
         overflow: hidden;
         border-radius: 18px;
         margin: 20px 0px;
+        .présentation_menu-margin-top {
+            margin-top: 26px;
+        }
         .présentation_menu {
             display: flex;
             align-items: flex-start;
@@ -379,22 +393,13 @@ a {
             padding: 0px 20px;
             // line-height: 6px;
             font-family: Roboto, Roboto;
-            font-weight: 350;
+            font-weight: 300;
             h3 {
                 margin: 0;
             }
             p {
                 margin-top: 0;
             }
-        }
-        .nouveau_menu {
-            position: relative;
-            bottom: 10em;
-            left: 70%;
-            background-color: #99E2D0;
-            border-radius: 1px;
-            padding: 7px 16px;
-            color: rgba(0, 0, 0, 0.7);
         }
     }
     .restaurant_menu_image {
@@ -426,22 +431,26 @@ footer {
     background-color: $background-color-footer;
     @include flex-center-column-no-align;
     color: #eee;
+    i {
+        margin-left: 5%;
+    }
+    .fa-utensils {
+        margin-right: 14px;
+    }
+    .fa-hands-helping {
+        margin-right: 10px;
+    }
+    .footer-flex {}
     .footer_icon-flex {
-        display: grid;
-        grid-template-columns: 1fr 10fr;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
         align-items: baseline;
     }
-    .footer_icon-flex .footer_icon-flex-margin {
-        -webkit-margin-before: 15px;
-        margin-block-start: 15px;
-    }
+    .contact-flex {}
     p {
-        margin: 0;
+        margin-top: 0;
     }
-}
-
-.titles {
-    @include font-logo_titres;
 }
 
 @media (min-width: 460px) and (max-width: 768px) {
@@ -478,6 +487,9 @@ footer {
                 padding: 0px 5px;
                 font-family: Roboto, Roboto;
                 font-weight: 350;
+            }
+            .nouveau_menu {
+                left: 54%;
             }
         }
     }

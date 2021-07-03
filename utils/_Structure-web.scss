@@ -101,7 +101,7 @@ $Texte:Roboto;
 
 @mixin flex-center-column {
     display: flex;
-    flex: 100%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -109,7 +109,7 @@ $Texte:Roboto;
 
 @mixin flex-center-column-no-align {
     display: flex;
-    flex: 100%;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
 }
