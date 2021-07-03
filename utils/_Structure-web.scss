@@ -45,15 +45,15 @@ $Texte:Roboto;
 }
 
 @mixin box-shadow_menu_button {
-    box-shadow: 1px 5px 20px 13.2px rgb(226, 226, 226);
+    box-shadow: 1px 5px 20px 13.2px #e2e2e2;
     border-radius: 18px;
-    height: 60px;
-    width: 330px;
+    height: 68px;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    padding: 5px 16px 5px 8px;
+    padding-bottom: 10px;
     margin: 15px 0px;
 }
 
@@ -71,7 +71,7 @@ $Texte:Roboto;
 }
 
 @mixin flash-retour_accueil {
-    font-size: x-large;
+    font-size: larger;
     text-align: center;
     align-items: center;
 }
