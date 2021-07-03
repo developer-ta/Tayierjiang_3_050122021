@@ -83,7 +83,7 @@ a {
     font-size: larger;
     text-align: center;
     align-items: center;
-    transform: translatex(-60px); }
+    transform: translate(-60px, -2px); }
     .logo_menu .flash-retour :hover {
       -webkit-animation: flash 200ms ease-in-out 1 forwards;
       animation: flash 200ms ease-in-out 1 forwards; }
@@ -128,7 +128,7 @@ a {
 
 .titles {
   font-family: shrikhand, sans-serif;
-  margin-left: 4%; }
+  margin-left: 5%; }
 
 .localisation {
   display: flex;
@@ -185,7 +185,7 @@ a {
       margin-left: 4%;
       margin-right: 10%; }
       .container-bg-color .main .titres h1 {
-        font-size: 33px; }
+        font-size: 28px; }
     .container-bg-color .main .menu-underling {
       border: #99E2D0 2px solid;
       width: 37px;
@@ -292,7 +292,7 @@ a {
   .main_fonctionnement .main_fonctionnement_elemant-shadow {
     box-shadow: 2px 5px 15px 0.2px #73737366;
     border-radius: 18px;
-    margin: 15px 0% 15px 4%;
+    margin: 15px 4% 15px 4%;
     height: 70px;
     padding-top: 15px;
     background-color: whitesmoke; }
@@ -403,6 +403,10 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline; }
+  footer .contact-flex {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%; }
   footer p {
     margin-top: 0; }
 
@@ -443,12 +447,8 @@ footer {
     .main_fonctionnement .main_fonctionnement-text {
       align-self: center; }
     .main_fonctionnement .main_fonctionnement_elemant-shadow {
-      box-shadow: 2px 5px 15px 0.2px #73737366;
-      border-radius: 18px;
-      margin: 15px 2% 15px 4%;
       padding-top: 0px;
-      background-color: whitesmoke;
-      width: 44%; }
+      flex-basis: 310px; }
       .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement-icon {
         color: rgba(115, 115, 115, 0.75);
         -webkit-margin-end: 2rem;
@@ -524,7 +524,7 @@ footer {
     .main_fonctionnement .main_fonctionnement-text {
       align-self: center; }
     .main_fonctionnement .main_fonctionnement_elemant-shadow {
-      flex-basis: 401px; }
+      flex-basis: 350px; }
     .main_fonctionnement .main_fonctionnement-flex {
       display: flex;
       align-items: center;
