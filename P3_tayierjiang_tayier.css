@@ -402,7 +402,7 @@ footer {
   footer .footer-flex {
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 90%; }
   footer .footer_icon-flex {
     display: flex;
@@ -515,8 +515,6 @@ footer {
       justify-content: flex-start;
       align-items: baseline; }
     footer .contact-flex {
-      display: flex;
-      flex-direction: row;
       margin-left: 0%; }
     footer p {
       margin-top: 0; } }

@@ -444,7 +444,7 @@ footer {
     .footer-flex {
         display: flex;
         justify-content: center;
-        flex-direction: row;
+        flex-direction: column;
         width: 90%;
     }
     .footer_icon-flex {
@@ -591,8 +591,6 @@ footer {
             align-items: baseline;
         }
         .contact-flex {
-            display: flex;
-            flex-direction: row;
             margin-left: 0%;
         }
         p {
