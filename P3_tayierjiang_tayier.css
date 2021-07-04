@@ -293,8 +293,8 @@ a {
     box-shadow: 2px 5px 15px 0.2px #73737366;
     border-radius: 18px;
     margin: 15px 4% 15px 4%;
-    height: 70px;
-    padding-top: 15px;
+    height: 64px;
+    padding-top: 4px;
     background-color: whitesmoke; }
     .main_fonctionnement .main_fonctionnement_elemant-shadow:hover {
       background-color: rgba(147, 86, 220, 0.15); }
@@ -411,7 +411,7 @@ footer {
     align-items: baseline; }
   footer .contact-flex {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-left: 5%; }
     footer .contact-flex a {
       padding-bottom: 5px; }
