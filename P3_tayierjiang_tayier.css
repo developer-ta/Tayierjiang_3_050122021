@@ -46,7 +46,7 @@ a {
   background-color: white;
   top: 0;
   overflow: hidden;
-  width: 100%;
+  width: 99.91%;
   height: 50px;
   -webkit-padding-before: 8px;
   padding-block-start: 8px;
@@ -391,13 +391,19 @@ footer {
   width: 100%;
   flex-direction: column;
   justify-content: center;
-  color: #eee; }
+  color: #eee;
+  padding-bottom: 30px; }
   footer i {
     margin-left: 5%; }
   footer .fa-utensils {
     margin-right: 14px; }
   footer .fa-hands-helping {
     margin-right: 10px; }
+  footer .footer-flex {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 90%; }
   footer .footer_icon-flex {
     display: flex;
     flex-direction: row;
@@ -405,8 +411,10 @@ footer {
     align-items: baseline; }
   footer .contact-flex {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 5%; }
+    footer .contact-flex a {
+      padding-bottom: 5px; }
   footer p {
     margin-top: 0; }
 
@@ -485,7 +493,33 @@ footer {
       flex-basis: 400px;
       margin: 2%; }
   .container-bg-color .main .menu_btn {
-    height: 75px; } }
+    height: 75px; }
+  footer {
+    align-items: center; }
+    footer i {
+      margin-left: 5%; }
+    footer .titles {
+      margin-left: 0%; }
+    footer .footer-flex {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      width: 90%; }
+    footer .fa-utensils {
+      margin-right: 14px; }
+    footer .fa-hands-helping {
+      margin-right: 10px; }
+    footer .footer_icon-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: baseline; }
+    footer .contact-flex {
+      display: flex;
+      flex-direction: row;
+      margin-left: 0%; }
+    footer p {
+      margin-top: 0; } }
 
 @media (min-width: 769px), (max-width: 1380px) and (min-width: 1380px) {
   .box-transform {
@@ -596,6 +630,8 @@ footer {
       display: flex;
       flex-direction: column;
       margin-left: 5%; }
+      footer .contact-flex a {
+        padding-bottom: 10px; }
     footer p {
       margin-top: 0; }
   .btn-Violet {

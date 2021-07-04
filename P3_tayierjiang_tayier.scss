@@ -38,7 +38,7 @@ a {
     background-color: white;
     top: 0;
     overflow: hidden;
-    width: 100%;
+    width: 99.91%;
     height: 50px;
     -webkit-padding-before: 8px;
     padding-block-start: 8px;
@@ -431,6 +431,7 @@ footer {
     background-color: $background-color-footer;
     @include flex-center-column-no-align;
     color: #eee;
+    padding-bottom: 30px;
     i {
         margin-left: 5%;
     }
@@ -440,7 +441,12 @@ footer {
     .fa-hands-helping {
         margin-right: 10px;
     }
-    .footer-flex {}
+    .footer-flex {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 90%;
+    }
     .footer_icon-flex {
         display: flex;
         flex-direction: row;
@@ -449,8 +455,11 @@ footer {
     }
     .contact-flex {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-left: 5%;
+        a {
+            padding-bottom: 5px;
+        }
     }
     p {
         margin-top: 0;
@@ -553,6 +562,41 @@ footer {
             .menu_btn {
                 height: 75px;
             }
+        }
+    }
+    footer {
+        align-items: center;
+        i {
+            margin-left: 5%;
+        }
+        .titles {
+            margin-left: 0%;
+        }
+        .footer-flex {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            width: 90%;
+        }
+        .fa-utensils {
+            margin-right: 14px;
+        }
+        .fa-hands-helping {
+            margin-right: 10px;
+        }
+        .footer_icon-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: baseline;
+        }
+        .contact-flex {
+            display: flex;
+            flex-direction: row;
+            margin-left: 0%;
+        }
+        p {
+            margin-top: 0;
         }
     }
 }
@@ -703,6 +747,9 @@ footer {
             display: flex;
             flex-direction: column;
             margin-left: 5%;
+            a {
+                padding-bottom: 10px;
+            }
         }
         p {
             margin-top: 0;
