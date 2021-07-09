@@ -414,17 +414,44 @@ a {
 }
 
 .fa-heart {
-    @include fa-heart;
+    // @include fa-heart;
+    font-size: 30px;
+    letter-spacing: 0.222em;
 }
 
 .fa-heart:hover {
-    font-weight: 600;
-    font-size: 30px;
-    background: linear-gradient(14deg, $color-secondaire, $color-primaires);
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-filter: drop-shadow(0px 1px 2px $color-secondaire);
-    filter: drop-shadow(0px 1px 2px $color-secondaire);
+    animation: heart 550ms ease-in-out forwards;
+}
+
+@keyframes heart {
+    from {
+        font-size: 30px;
+        letter-spacing: 0.222em;
+        background: linear-gradient(-14deg, $color-secondaire, $color-primaires);
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-filter: drop-shadow(0px 1px 2px $color-secondaire);
+        filter: drop-shadow(0px 1px 2px $color-secondaire);
+        background-position: 0px;
+    }
+    25% {
+        background-position: 10px;
+    }
+    50% {
+        background-position: 20px;
+    }
+    75% {
+        background-position: 30px;
+    }
+    to {
+        font-weight: 600;
+        font-size: 30px;
+        background: linear-gradient(14deg, $color-secondaire, $color-primaires);
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-filter: drop-shadow(0px 1px 2px $color-secondaire);
+        filter: drop-shadow(0px 1px 2px $color-secondaire);
+    }
 }
 
 footer {
