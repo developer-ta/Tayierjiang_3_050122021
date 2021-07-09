@@ -54,11 +54,17 @@ a {
   z-index: 1;
   max-width: 1380px; }
   .logo_accueil a:hover {
-    transform: scale(1.06); }
-  .logo_accueil .flash-retour {
-    font-size: larger;
-    text-align: center;
-    align-items: center; }
+    animation: logo 500ms ease-in-out both; }
+
+@keyframes logo {
+  0% {
+    transform: scale(1.01) translateX(-2px); }
+  25% {
+    transform: scale(1.03) translateX(2px); }
+  50% {
+    transform: scale(1.05) translateX(-2px); }
+  100% {
+    transform: scale(1.06) translateX(2px); } }
 
 .logo_menu {
   display: flex;
@@ -78,7 +84,17 @@ a {
   .logo_menu img {
     margin-left: -9%; }
   .logo_menu img:hover {
-    transform: scale(1.06); }
+    animation: logo 500ms ease-in-out both; }
+
+@keyframes logo {
+  0% {
+    transform: scale(1.01) translateX(-2px); }
+  25% {
+    transform: scale(1.03) translateX(2px); }
+  50% {
+    transform: scale(1.05) translateX(-2px); }
+  100% {
+    transform: scale(1.06) translateX(2px); } }
   .logo_menu .flash-retour {
     font-size: larger;
     text-align: center;
@@ -200,17 +216,18 @@ a {
       flex-direction: row;
       align-items: flex-end;
       justify-content: space-between;
-      padding-bottom: 10px;
       margin: 15px 0px; }
       .container-bg-color .main .menu_btn h3 {
         margin: 0; }
       .container-bg-color .main .menu_btn p {
-        margin-bottom: 0; }
+        margin-bottom: 10px; }
+      .container-bg-color .main .menu_btn i.far.fas.fa-check-circle {
+        transform: rotate(112deg); }
     .container-bg-color .main .menu_btn-1 {
-      animation: opa-1 4300ms ease-in-out;
+      animation: opa-1 4000ms ease-in-out;
       -webkit-animation: opa-1 4300ms ease-in-out; }
     .container-bg-color .main .menu_btn-2 {
-      animation: opa-2 4650ms ease-in-out;
+      animation: opa-2 4500ms ease-in-out;
       -webkit-animation: opa-2 4650ms ease-in-out; }
     .container-bg-color .main .menu_btn-3 {
       animation: opa-3 5000ms ease-in-out 1s;
@@ -278,6 +295,15 @@ a {
   .container-bg-color .menu_text {
     font-weight: lighter;
     margin-left: 2%; }
+  .container-bg-color .check-circle {
+    color: white;
+    height: 100%;
+    width: 50px;
+    background-color: #99e2d0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
   .container-bg-color .prix {
     margin-right: 7%; }
 
@@ -367,10 +393,12 @@ a {
 
 .fa-heart {
   font-size: 30px;
-  letter-spacing: 0.222em; }
+  letter-spacing: 0.222em;
+  cursor: pointer; }
 
 .fa-heart:hover {
-  animation: heart 550ms ease-in-out forwards; }
+  animation: heart 300ms ease-in-out forwards;
+  cursor: pointer; }
 
 @keyframes heart {
   from {
