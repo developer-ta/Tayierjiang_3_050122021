@@ -299,11 +299,12 @@ a {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-between; }
+    justify-content: space-between;
+    transition: transform 200ms ease-in; }
     .container-bg-color .masque-overflow .check-circle {
       color: white;
       height: 100%;
-      width: 60px;
+      width: 16%;
       background-color: #99e2d0;
       display: flex;
       flex-direction: row;
@@ -311,23 +312,26 @@ a {
       align-items: center; }
       .container-bg-color .masque-overflow .check-circle .fa-check-circle {
         transform: rotate(120deg);
-        transition: all 1s ease-in; }
+        transition: transform 200ms ease-in; }
     .container-bg-color .masque-overflow:hover {
       box-shadow: 0px 2px 10px 2px #73737369;
       transform: translateX(5px); }
-      .container-bg-color .masque-overflow:hover .menu_text {
-        min-width: 70%; }
+      .container-bg-color .masque-overflow:hover .fa-check-circle {
+        transform: rotate(0deg); }
+      .container-bg-color .masque-overflow:hover .menu_btn {
+        min-width: 85%; }
     .container-bg-color .masque-overflow .menu_btn {
       display: flex;
       flex-direction: row;
       align-items: flex-end;
       justify-content: space-between;
       height: 100%;
-      min-width: 118%; }
+      min-width: 100%;
+      transition: min-width 200ms ease-in; }
       .container-bg-color .masque-overflow .menu_btn .menu_text {
         font-weight: lighter;
         margin-left: 3%;
-        min-width: 345px; }
+        overflow: hidden; }
       .container-bg-color .masque-overflow .menu_btn .prix {
         margin-right: 5%; }
       .container-bg-color .masque-overflow .menu_btn h3 {
@@ -360,8 +364,6 @@ a {
     .main_fonctionnement .main_fonctionnement_elemant-shadow:hover .main_fonctionnement-icon {
       color: #9356DC; }
     .main_fonctionnement .main_fonctionnement_elemant-shadow .main_fonctionnement_elemant-grid {
-      /* display: grid; */
-      /* grid-template-columns: 9% 14% 3fr; */
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
