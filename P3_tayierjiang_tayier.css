@@ -404,6 +404,9 @@ a {
     overflow: hidden;
     border-radius: 18px;
     margin: 20px 0px; }
+    .restaurant .restaurant_menu:hover {
+      box-shadow: 1px 2px 9px 3px #737373;
+      transform: scale(1.003); }
     .restaurant .restaurant_menu .présentation_menu-margin-top {
       margin-top: 26px; }
     .restaurant .restaurant_menu .présentation_menu {
