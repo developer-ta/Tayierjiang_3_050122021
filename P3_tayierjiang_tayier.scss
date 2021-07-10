@@ -46,7 +46,22 @@
             z-index: 1;
             max-width: 1380px;
             a:hover {
+                -webkit-animation: logo 500ms ease-in-out both;
                 animation: logo 500ms ease-in-out both;
+            }
+            @-webkit-keyframes logo {
+                0% {
+                    transform: scale(1.01) translateX(-2px);
+                }
+                25% {
+                    transform: scale(1.03) translateX(2px);
+                }
+                50% {
+                    transform: scale(1.05) translateX(-2px);
+                }
+                100% {
+                    transform: scale(1.06) translateX(2px);
+                }
             }
             @keyframes logo {
                 0% {
@@ -87,7 +102,22 @@
                 margin-left: -9%;
             }
             img:hover {
+                -webkit-animation: logo 500ms ease-in-out both;
                 animation: logo 500ms ease-in-out both;
+            }
+            @-webkit-keyframes logo {
+                0% {
+                    transform: scale(1.01) translateX(-2px);
+                }
+                25% {
+                    transform: scale(1.03) translateX(2px);
+                }
+                50% {
+                    transform: scale(1.05) translateX(-2px);
+                }
+                100% {
+                    transform: scale(1.06) translateX(2px);
+                }
             }
             @keyframes logo {
                 0% {
@@ -233,8 +263,32 @@
                     -webkit-animation: opa-2 4650ms ease-in-out;
                 }
                 .menu_btn-3 {
-                    animation: opa-3 5000ms ease-in-out 1s;
+                    animation: opa-3 5000ms ease-in-out;
                     -webkit-animation: opa-3 5000ms ease-in-out;
+                }
+                .menu_btn-1-1 {
+                    animation: opa-1 4000ms ease-in-out 1750ms;
+                    -webkit-animation: opa-1 4300ms ease-in-out 1750ms;
+                }
+                .menu_btn-2-1 {
+                    animation: opa-2 4500ms ease-in-out 1750ms;
+                    -webkit-animation: opa-2 4650ms ease-in-out 1750ms;
+                }
+                .menu_btn-3-1 {
+                    animation: opa-3 5000ms ease-in-out 1750ms;
+                    -webkit-animation: opa-3 5000ms ease-in-out 1750ms;
+                }
+                .menu_btn-1-2 {
+                    animation: opa-1 4000ms ease-in-out 3500ms;
+                    -webkit-animation: opa-1 4300ms ease-in-out 3500ms;
+                }
+                .menu_btn-2-2 {
+                    animation: opa-2 4500ms ease-in-out 3500ms;
+                    -webkit-animation: opa-2 4650ms ease-in-out 3500ms;
+                }
+                .menu_btn-3-2 {
+                    animation: opa-3 5000ms ease-in-out 3500ms;
+                    -webkit-animation: opa-3 5000ms ease-in-out 3500ms;
                 }
             }
             @-webkit-keyframes opa-1 {
@@ -513,8 +567,40 @@
         }
         
         .fa-heart:hover {
+            -webkit-animation: heart 300ms ease-in-out forwards;
             animation: heart 300ms ease-in-out forwards;
             cursor: pointer;
+        }
+        
+        @-webkit-keyframes heart {
+            from {
+                font-size: 30px;
+                letter-spacing: 0.222em;
+                background: linear-gradient(-14deg, $color-secondaire, $color-primaires);
+                -webkit-background-clip: text;
+                color: transparent;
+                -webkit-filter: drop-shadow(0px 1px 2px $color-secondaire);
+                filter: drop-shadow(0px 1px 2px $color-secondaire);
+                background-position: 0px;
+            }
+            25% {
+                background-position: 10px;
+            }
+            50% {
+                background-position: 20px;
+            }
+            75% {
+                background-position: 30px;
+            }
+            to {
+                font-weight: 600;
+                font-size: 30px;
+                background: linear-gradient(14deg, $color-secondaire, $color-primaires);
+                -webkit-background-clip: text;
+                color: transparent;
+                -webkit-filter: drop-shadow(0px 1px 2px $color-secondaire);
+                filter: drop-shadow(0px 1px 2px $color-secondaire);
+            }
         }
         
         @keyframes heart {
