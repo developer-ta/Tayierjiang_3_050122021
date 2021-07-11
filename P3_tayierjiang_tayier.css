@@ -736,6 +736,7 @@ footer {
 
 .loading-spinner {
   display: flex;
+  flex-direction: column;
   height: 100%;
   box-sizing: border-box;
   margin: 0;
@@ -748,7 +749,7 @@ footer {
   position: absolute;
   z-index: 2;
   top: 0;
-  animation: loading-spinner 3.2s ease-out forwards; }
+  animation: loading-spinner 3s ease-out forwards; }
 
 @keyframes loading-spinner {
   0% {
@@ -759,24 +760,22 @@ footer {
     opacity: 1; }
   100% {
     opacity: 0; } }
-  .loading-spinner .loading-spinner-main {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-end; }
-    .loading-spinner .loading-spinner-main .chargement {
-      position: absolute;
-      top: 20rem;
-      color: #ffd700;
-      z-index: 1; }
-      .loading-spinner .loading-spinner-main .chargement .line-color {
-        background: repeating-linear-gradient(237deg, #118fe8, #6f89ac85 208px);
-        height: 30px;
-        width: 200px;
-        position: relative;
-        top: -54px;
-        z-index: -1;
-        animation: line-color 2900ms ease-out forwards; }
+  .loading-spinner h1 {
+    margin: 0; }
+  .loading-spinner .chargement {
+    position: relative;
+    color: #ffd700;
+    z-index: 1; }
+    .loading-spinner .chargement h1 {
+      margin: 0; }
+    .loading-spinner .chargement .line-color {
+      background: repeating-linear-gradient(237deg, #118fe8, #6f89ac85 208px);
+      height: 31px;
+      width: 200px;
+      position: relative;
+      top: -32px;
+      z-index: -1;
+      animation: line-color 2800ms ease-out forwards; }
 
 @keyframes line-color {
   0% {
@@ -785,6 +784,11 @@ footer {
   100% {
     background-position: 200px;
     width: 200px; } }
+  .loading-spinner .loading-spinner-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end; }
     .loading-spinner .loading-spinner-main .loading-spinner-anim_1 {
       animation: anim-1 2600ms cubic-bezier(0.24, 0.01, 0.76, 1) 2; }
     .loading-spinner .loading-spinner-main .loading-spinner-anim_2 {
@@ -797,24 +801,24 @@ footer {
     transform: scale(1);
     opacity: 1; }
   12.5% {
-    transform: scale(1.1, 0.7); }
+    transform: scale(1.1, 0.7);
+    color: #9356DC; }
   25% {
-    transform: scaleY(1) translate3d(-10px, -50px, 1px); }
+    transform: scaleY(1) translate3d(-10px, -50px, 1px);
+    color: white; }
   48% {
-    transform: scaleY(1.2) translate3d(0px, -100px, 1px); }
+    transform: scaleY(1.2) translate3d(0px, -100px, 1px);
+    color: #ee90d1; }
   60% {
     transform: scaleY(1) translate3d(0px, -150px, 1px);
-    color: #ee90d1; }
+    color: #99E2D0; }
   75% {
     transform: scale(1) translateY(-150px);
-    color: #99E2D0; }
-  88% {
+    color: #FF79DA; }
+  85% {
     transform: scale(1) translateY(-150px);
     color: #0037ff;
     opacity: .5; }
-  95% {
-    opacity: .1;
-    transform: scale(1) translateY(-150px); }
   100% {
     opacity: .1;
     transform: scale(1) translateY(-150px); } }
