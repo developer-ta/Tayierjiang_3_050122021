@@ -676,8 +676,6 @@ footer {
         justify-content: space-around; }
       .restaurant .restaurant_menu .nouveau_menu {
         bottom: 15em; }
-  .logo_menu {
-    width: 87.11%; }
   .main_fonctionnement {
     display: flex;
     flex-direction: column;
