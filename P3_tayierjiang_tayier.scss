@@ -37,7 +37,7 @@
             top: 0;
             overflow: hidden;
             width: 99.91%;
-            height: 50px;
+            height: 45px;
             -webkit-padding-before: 8px;
             padding-block-start: 8px;
             box-shadow: 0px 3px 9px -3px grey;
@@ -904,7 +904,7 @@
         .loading-spinner {
             display: flex;
             flex-direction: column;
-            height: 120%;
+            height: 100%;
             box-sizing: border-box;
             margin: 0;
             padding: 0;
@@ -917,19 +917,14 @@
             position: absolute;
             z-index: 3;
             top: 0;
-            animation: loading-spinner 3s ease-out forwards;
+            animation: loading-spinner 3s ease-in-out forwards;
             @keyframes loading-spinner {
                 0% {
+                    height: 100%;
                     opacity: 1;
                 }
-                50% {
+                95% {
                     opacity: 1;
-                }
-                85% {
-                    opacity: 1;
-                }
-                99% {
-                    opacity: 0;
                     transform: scale(1);
                     transform-origin: top;
                 }
@@ -937,6 +932,8 @@
                     transform: scale(0);
                     transform-origin: top;
                     height: 0px;
+                    opacity: 0;
+                    top: 0;
                 }
             }
             h1 {
@@ -946,6 +943,7 @@
                 position: relative;
                 color: #ffd700;
                 z-index: 3;
+                overflow: hidden;
                 h1 {
                     margin: 0;
                 }
@@ -956,7 +954,7 @@
                     position: relative;
                     top: -32px;
                     z-index: 2;
-                    animation: line-color 1800ms ease-out forwards;
+                    animation: line-color 2650ms ease-in-out forwards;
                 }
             }
             @keyframes line-color {
@@ -965,8 +963,8 @@
                     background-position: 0px;
                 }
                 100% {
-                    background-position: 200px;
-                    width: 200px;
+                    background-position: 208px;
+                    width: 208px;
                 }
             }
             .loading-spinner-main {
@@ -975,13 +973,13 @@
                 justify-content: center;
                 align-items: flex-end;
                 .loading-spinner-anim_1 {
-                    animation: anim-1 2600ms cubic-bezier(0.24, 0.01, 0.76, 1) 2;
+                    animation: anim-1 1800ms ease-out 1;
                 }
                 .loading-spinner-anim_2 {
-                    animation: anim-1 2600ms cubic-bezier(0.24, 0.01, 0.76, 1) 200ms 2;
+                    animation: anim-1 1800ms ease-out 100ms 1;
                 }
                 .loading-spinner-anim_3 {
-                    animation: anim-1 2600ms cubic-bezier(0.24, 0.01, 0.76, 1) 400ms 2;
+                    animation: anim-1 1800ms ease-out 300ms 1;
                 }
                 @keyframes anim-1 {
                     0% {
@@ -993,29 +991,30 @@
                         color: $color-primaires;
                     }
                     25% {
-                        transform: scaleY(1) translate3d(-10px, -50px, 1px);
+                        transform: scaleY(1) translate3d(-10px, -20px, 1px);
                         color: white;
                     }
                     48% {
-                        transform: scaleY(1.2) translate3d(0px, -100px, 1px);
+                        transform: scaleY(1.2) translate3d(0px, -30px, 1px);
                         color: #ee90d1;
                     }
                     60% {
-                        transform: scaleY(1) translate3d(0px, -150px, 1px);
+                        transform: scaleY(1) translate3d(0px, -70px, 1px);
                         color: $color-tertiaire;
                     }
                     75% {
-                        transform: scale(1) translateY(-150px);
-                        color: $color-secondaire;
+                        transform: scale(1) translateY(-70px);
+                        color: gold;
                     }
                     85% {
-                        transform: scale(1) translateY(-150px);
+                        transform: scale(1) translateY(-70px);
                         color: #0037ff;
-                        opacity: .5;
+                        opacity: .8;
                     }
                     100% {
-                        opacity: .1;
-                        transform: scale(1) translateY(-150px);
+                        opacity: 1;
+                        transform: scale(1) translateY(-70px);
+                        color: goldenrod;
                     }
                 }
             }
