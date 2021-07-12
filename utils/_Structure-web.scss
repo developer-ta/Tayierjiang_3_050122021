@@ -89,7 +89,7 @@ $Texte:Roboto;
 @mixin flex-main-box {
     background-color: $background-color-Primaire;
     display: flex;
-    flex: 100%;
+    width: 100%;
     flex-direction: column;
 }
 
