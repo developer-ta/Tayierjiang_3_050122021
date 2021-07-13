@@ -452,6 +452,9 @@
                     p {
                         margin-top: 10px;
                         margin-bottom: 10px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
                     }
                 }
             }
