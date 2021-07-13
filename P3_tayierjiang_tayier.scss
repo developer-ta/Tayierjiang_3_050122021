@@ -196,6 +196,10 @@
                 width: 100%;
                 .fa-map-marker-alt {
                     padding-right: 15px;
+                    transition: transform 5ms ease-in-out;
+                    &:hover {
+                        transform: scale(1.3);
+                    }
                 }
             }
             .info_Restaurant {
