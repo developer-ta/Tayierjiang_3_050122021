@@ -734,9 +734,9 @@ footer {
   .container-bg-color .main .masque-overflow {
     height: 75px; }
   .btn-Violet {
-    transform: scale(1.25); }
+    transform: scale(1.01); }
     .btn-Violet:hover {
-      transform: scale(1.3); } }
+      transform: scale(1.15); } }
 
 .loading-spinner {
   display: flex;
