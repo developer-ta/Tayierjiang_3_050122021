@@ -412,14 +412,15 @@
                     // transition: transform 1s ease-in;
                     .fa-check-circle {
                         transform: rotate(120deg);
-                        transition: transform 200ms ease-in;
+                        transition: transform 10ms ease-out 300ms;
                     }
                 }
                 &:hover {
                     box-shadow: 1px 2px 10px 3px #73737369;
                     transform: translateX(7px);
                     .fa-check-circle {
-                        transform: rotate(0deg);
+                        transform: rotate(360deg);
+                        transition: transform 200ms ease-in;
                     }
                     .menu_btn {
                         min-width: 85%;
